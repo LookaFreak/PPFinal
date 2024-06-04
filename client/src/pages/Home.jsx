@@ -73,7 +73,7 @@ const Home = () => {
               <img
                 src={data.image}
                 className="w-100 d-block"
-                style={{ height: "100%", objectFit: "cover" }}
+                style={{ height: "150%", objectFit: "fill" }}
                 alt="..."
               />
               <div

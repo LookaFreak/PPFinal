@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logos.png";
+import logo from "../assets/logo.png";
 import { categories } from "../data/data";
 import { useDispatch, useSelector } from "react-redux";
 import { message } from "antd";
@@ -36,8 +36,8 @@ const Navabar = ({ dark, Setdark }) => {
         {/* logo */}
         <a href="/" className="navbar-brand fs-4">
           <img
-            width="60px"
-            height="60px"
+            width="200px"
+            height="100px"
             className="d-inline-block align-top"
             src={logo}
             alt=""

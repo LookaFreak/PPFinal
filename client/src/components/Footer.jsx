@@ -1,38 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logos.png";
+import logo from "../assets/logo.png";
 import { social_media } from "../data/data";
 
 const Footer = ({ dark }) => {
   return (
-    <footer className={`${dark ? "bg-dark" : "bg-light"}  footer`}>
+    <footer className={`${dark ? "bg-dark" : "bg-light"} footer`}>
       <div className="footer-container">
         <div className="detail text-white">
-          <img src={logo} alt="" style={{ width: "4rem", height: "4rem" }} />
+          <img src={logo} alt="" style={{ width: "13rem", height: "10rem" }} />
           <div className="text-content">
-            <span className="title">Palermo Footbal Club SpA</span>
+            <span className="title">Pazzo Palermo</span>
             <p>
-              Tax code and VAT number 06804260823{" "}
+              Codice fiscale e partita IVA 05535750870{" "}
               <span className="underline">Privacy Policy</span>-
               <span className="underline">Cookie Policy</span>
             </p>
             <p>
-              Subject to the management and coordination of the English company
-              City Football Group Limited
+              Creato, concepito e gestito da Alessandro Camarda
             </p>
-
             <p className="copyRight text-white">
-              Copyright 2025 palermo FC All rights reserved
+              Copyright 2025 Pazzo Palermo Tutti i diritti riservati
             </p>
           </div>
         </div>
         <div className="main">
           <div className="socials">
             {social_media.map((social) => (
-              <div className="social-icons text-white">{social.icon}</div>
+              <a 
+                key={social.link}
+                href={social.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-icons text-white"
+              >
+                {social.icon}
+              </a>
             ))}
           </div>
-          <p className="text-end text-white fw-bold">IM*MEDIA</p>
+          <p className="text-end text-white fw-bold"></p>
         </div>
       </div>
     </footer>
@@ -40,3 +46,4 @@ const Footer = ({ dark }) => {
 };
 
 export default Footer;
+

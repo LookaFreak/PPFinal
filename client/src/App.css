@@ -23,9 +23,10 @@ body {
   background-color: transparent !important;
 }
 .carousel-item {
-  height: 100vh;
+  height: 600px;
   min-height: 300px;
-}
+  }
+
 .carousel-caption {
   bottom: 220px;
 }
@@ -34,12 +35,17 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 25px;
+  color: palevioletred;
+  text-shadow: 2px 2px 4px black; 
 }
 .carousel-caption p {
   width: 60%;
   margin: auto;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 1.9;
+  color: black;
+  text-shadow: 2px 2px 4px palevioletred;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 767px) {
@@ -64,20 +70,39 @@ body {
   padding: 6rem 4rem;
 }
 #offers .containers {
-  height: 60vh;
+  height: 65vh;
   padding: 2rem 3rem;
-  background: url("./assets/baneer.jpg") center/cover no-repeat;
+  background: url("./assets/baneer.gif") center/cover no-repeat;
   display: flex;
   justify-content: right;
   align-items: center;
 }
 
-.content-text span {
-  font-size: 28px;
-}
-.content-text h3 {
-  font-size: 50px;
+.shop{
+ color: transparent;
   font-family: var(--font-lg);
+  font-size: 300px;
+  font-weight: bolder;
+  text-shadow: black;
+  text-decoration: none;
+  border-style:none;
+  border-color: transparent;
+ 
+  align-items: center;
+}
+
+.content-text h3 {
+  color: transparent;
+  background-image: url('https://media.istockphoto.com/id/915087622/it/vettoriale/illustrazione-di-un-campo-da-calcio-campo-da-calcio-o-sfondo-campo-da-calcio.jpg?s=612x612&w=0&k=20&c=elMoLxS-gqyRHa3glFTAaJHeJiajULRVZZr3PrdxLFM=');
+  background-size: cover;
+  background-clip: text;
+  
+   font-family: var(--font-lg);
+   font-size: 30px;
+   font-weight: bolder;
+   text-shadow: black;
+ 
+
 }
 
 @media (max-width: 800px) {
@@ -88,7 +113,7 @@ body {
   #offers .containers {
     height: 60vh;
     padding: 2rem 3rem;
-    background: url("./assets/baneer.jpg") center/cover no-repeat;
+    background: url("./assets/baneer.gif") center/cover no-repeat;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -113,6 +138,8 @@ body {
 .card .blog-image img {
   width: 100%;
   height: 300px;
+  object-fit: cover;
+  
 }
 
 .card .tag {
@@ -178,6 +205,7 @@ body {
 
 .card .blog-avatar img {
   width: 100%;
+  
 }
 
 .card .blog-comment {

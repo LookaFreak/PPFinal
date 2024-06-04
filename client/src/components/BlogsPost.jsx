@@ -79,8 +79,8 @@ const BlogsPost = ({ dark }) => {
                   <div className="bg-warning tag">{item.category}</div>
                 </div>
                 <div className="blog-content">
-                  <div className="blog-title">{item.title}</div>
-                  <div className="blog-subtitle">{item.subtitle}</div>
+                  <div className="blog-title text-dark">{item.title}</div>
+                  <div className="blog-subtitle text-dark">{item.subtitle}</div>
                   <p className="blog-desc">
                     {truncateText(item.description, 10)}
                     <a href={`./blogs/detail/${item._id}`}>

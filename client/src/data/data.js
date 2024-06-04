@@ -160,7 +160,7 @@ export const categories = [
 // "Mercato", "News", "SerieB", "Video", "Primavera", "Femminile", "Altro", "SerieA"
 
 export const social_media = [
-  { icon: <FaFacebook />, name: "facebook", link: "http/facebook" },
+  { icon: <FaFacebook />, name: "facebook", link: "https://www.facebook.com/profile.php?id=61560017382621" },
   { icon: <FaInstagram />, name: "Instagram", link: "http/Instagram" },
   { icon: <FaYoutube />, name: "youtube", link: "http/facebook" },
   { icon: <FaXTwitter />, name: "twitter", link: "http/facebook" },
