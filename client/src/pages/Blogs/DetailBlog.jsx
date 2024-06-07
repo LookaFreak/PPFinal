@@ -43,7 +43,7 @@ const DetailBlog = () => {
       <Navabar dark={isDarkTheme} Setdark={setIsDarkTheme} />
       <div
         className="container  mb-5"
-        style={{ color: "#333", marginTop: "5rem", paddingTop: "2rem" }}
+        style={{ color: "#333", marginTop: "7rem", paddingTop: "2rem" }}
       >
         <span className={`fs-5  ${isDarkTheme ? "text-dark" : "text-light"}`}>
           {formatDate(blog.createdAt)}

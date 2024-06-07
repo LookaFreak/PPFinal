@@ -28,14 +28,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/update-blog/:id" element={<UpdateBlog />} />
-          <Route
-            path="/blogs/detail/:id"
-            element={
-              <ProtectedRoute>
-                <DetailBlog />
-              </ProtectedRoute>
-            }
-          />
+          <Route path="/blogs/detail/:id" element={<DetailBlog />} />
           <Route
             path="/create-blogs"
             element={
@@ -46,7 +39,6 @@ const App = () => {
           />
           <Route path="/profile" element={<Protfile />} />
           <Route path="/categories/:category" element={<Categories />} />
-
           <Route path="*" element={<Error />} />
         </Routes>
       )}

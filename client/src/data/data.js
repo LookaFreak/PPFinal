@@ -152,8 +152,8 @@ export const categories = [
   { name: "SerieB", link: "./serieb" },
   { name: "Video", link: "./video" },
   { name: "Primavera", link: "./primavera" },
-  { name: "Femminile", link: "./femminile" },
-  { name: "Altro", link: "./altro" },
+  { name: "Meme", link: "./meme" },
+  { name: "Opinioni", link: "./opinioni" },
   { name: "SerieA", link: "./seriea" },
 ];
 
